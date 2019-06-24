@@ -1,0 +1,34 @@
+:root{
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #f3f3f3;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
+    --mainGreen: #28a745;
+  }
+  
+  body{
+    font-family: 'Montserrat', sans-serif !important;
+    background: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
+  }
+  
+  .text-title{
+    color: var(--mainGreen);
+    font-family: 'Baloo Bhai', cursive;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .text-blue{
+    color: var(--mainBlue);
+  }
+  
+  .text-light{
+    color: var(--lightBlue);
+  }
+  
+  .navbar img{
+    width:60px;
+    height:60px;
+  }
