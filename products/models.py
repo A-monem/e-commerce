@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Product(models.Model):
     title = models.CharField(max_length=30)
-    price = models.DecimalField(max_digits=5, decimal_places=2)
+    price = models.FloatField(default=0.0)
     company = models.CharField(max_length=30)
     description = models.TextField(blank=True)
     incart = models.BooleanField(default=False)

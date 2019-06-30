@@ -3,8 +3,10 @@
     --lightBlue: #009ffd;
     --mainWhite: #f3f3f3;
     --mainDark: #232528;
-    --mainYellow: #ffa400;
+    --mainYellow: #dbd94a;
     --mainGreen: #28a745;
+    --lightGreen: #6fce85;
+    --mainOrange: #ebad05;
   }
   
   body{
@@ -20,15 +22,19 @@
     text-align: center;
   }
   
-  .text-blue{
-    color: var(--mainBlue);
+  .text-green{
+    color: var(--mainGreen);
   }
   
-  .text-light{
-    color: var(--lightBlue);
+  .light-green{
+    color: var(--lightGreen);
   }
   
   .navbar img{
     width:60px;
     height:60px;
+  }
+
+  .text-small{
+    font-size: 20px;
   }
