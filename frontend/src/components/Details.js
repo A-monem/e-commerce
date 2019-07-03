@@ -9,8 +9,7 @@ export default class Details extends Component {
     return (
       <ProductConsumer>
         {(value)=>{
-          const product = value.singleProduct
-          const {id, title, price, image, description, company, incart, count, total} = product
+          const {id, title, price, image, description, company, incart, count, total} = value.singleProduct
           return(
             <div className='container'>
               <Title title={title}/>
@@ -29,8 +28,8 @@ export default class Details extends Component {
                     <ButtonContainer
                       disabled={incart? true: false}
                       onClick={() => {
-                        value.handleAddToCart(id)
-                        value.openModal(id)}}>
+                        value.handleAddToCart(id);
+                        value.openModal(id);}}>
                       {incart? "InCart": "Add to Cart"}
                     </ButtonContainer>
                 </div>

@@ -19,8 +19,8 @@ export default class Product extends Component {
             className='cart-btn'
             disabled={incart?true:false}
             onClick={() => 
-            {handleAddToCart(id)
-             openModal(id)}}>
+            {handleAddToCart(id);
+             openModal(id);}}>
               {incart? <p className='text-small mb-0' disabled>In cart</p> : <i className='fa fa-cart-plus'/>}
             </button>
           </div>
