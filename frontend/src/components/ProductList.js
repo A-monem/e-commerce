@@ -17,7 +17,9 @@ export default class ProductList extends Component {
                   key={product.id} 
                   product={product} 
                   handleDetails={value.handleDetails}
-                  handleAddToCart={value.handleAddToCart}/>
+                  handleAddToCart={value.handleAddToCart}
+                  openModal={value.openModal}  
+                  closeModal={value.closeModal}/>
                 ))
               )}
             </ProductConsumer>

@@ -7,8 +7,7 @@ export default class Product extends Component {
 
   render() {
     const {id, image, title, price, incart} = this.props.product
-    const handleDetails = this.props.handleDetails
-    const handleAddToCart = this.props.handleAddToCart
+    const {handleDetails, handleAddToCart, openModal} = this.props
     return (
       <ProductWrapper className='mx-auto col-9 col-md-6 col-lg-3 my-3'>
         <div className='card'>
@@ -16,7 +15,12 @@ export default class Product extends Component {
             <Link to='/details'>
               <img src={image} alt='Product Image' className='card-img-top'/>
             </Link>
-            <button className='cart-btn' disabled={incart?true:false} onClick={() => handleAddToCart(id)}>
+            <button 
+            className='cart-btn'
+            disabled={incart?true:false}
+            onClick={() => 
+            {handleAddToCart(id)
+             openModal(id)}}>
               {incart? <p className='text-small mb-0' disabled>In cart</p> : <i className='fa fa-cart-plus'/>}
             </button>
           </div>
