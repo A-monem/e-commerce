@@ -18,7 +18,7 @@ export default class Cart extends Component {
             ? <div>
                 <CartColumns/>
                 <CartList value={value}/>
-                <CartTotals value={value}/>
+                <CartTotals value={value} history={this.props.history}/>
               </div>
             : <EmptyCart /> 
             )

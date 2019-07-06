@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-export default class CartTotals extends Component {
-  render() {
-    const { cartSubtotal, cartTax, cartTotal, cart, clearCart } = this.props.value;
+import PayPalButton from './PayPalButton'
+
+
+export default function CartTotals({ value, history}) {
+
+    const { cartSubtotal, cartTax, cartTotal, clearCart } = value;
     return (
             <div className="row">
               <div className="col-sm-8 col-md-10 mt-2 ml-sm-5 text-capitalize text-right">
@@ -33,5 +36,4 @@ export default class CartTotals extends Component {
             </div>
     );
   }
-}
 
