@@ -2,7 +2,7 @@ from django.urls import path
 from frontend.views import index
 
 urlpatterns = [
-    path('', index),
-    path('cart/', index),
-    path('details/', index),
+    path('', index, name='home'),
+    path('cart/', index, name='cart'),
+    path('details/', index, name='details'),
 ]

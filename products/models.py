@@ -8,5 +8,5 @@ class Product(models.Model):
     description = models.TextField(blank=True)
     incart = models.BooleanField(default=False)
     count = models.IntegerField(default=0)
-    total = models.DecimalField(max_digits=10, decimal_places=2)
+    total = models.DecimalField(default=0, max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='producImage', null=True)
