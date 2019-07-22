@@ -8,7 +8,7 @@
 
 ## Live
 
-    http://anafea.pythonanywhere.com/
+    [http://anafea.pythonanywhere.com/]
 
 ## Features
 
