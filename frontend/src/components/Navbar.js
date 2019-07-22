@@ -16,11 +16,17 @@ export default class Navbar extends Component {
                         </li>
                     </ul>
                     <ul className='navbar-nav ml-auto'>
+                    {/* hide cart in case user is not logged in */}
                         <li className='nav-item '>
                             <Link to='/cart' className='nav-link'>
                                 <i className="fas fa-shopping-cart"></i>
                             </Link>
                         </li>
+                        {/* <li>
+                            <Link to='#' className='nav-link'>
+                                Login
+                            </Link>
+                        </li> */}
                     </ul> 
                 </nav>
             </div>
